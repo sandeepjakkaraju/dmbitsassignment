@@ -15679,12 +15679,20 @@ Best parameters set:
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Metrics-for-BEST-MODEL">Metrics for BEST MODEL<a class="anchor-link" href="#Metrics-for-BEST-MODEL">&#182;</a></h1>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[155]:</div>
+<div class="prompt input_prompt">In&nbsp;[158]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">metrics</span><span class="o">.</span><span class="n">classification_report</span><span class="p">(</span><span class="n">Y_test</span><span class="p">,</span><span class="n">Y_pred</span><span class="p">))</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s2">&quot;accuracy_score(Y_test, y_pred_xgb))</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">metrics</span><span class="o">.</span><span class="n">classification_report</span><span class="p">(</span><span class="n">Y_test</span><span class="p">,</span><span class="n">y_pred_xgb</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -15701,14 +15709,15 @@ Best parameters set:
 
 
 <div class="output_subarea output_stream output_stdout output_text">
-<pre>              precision    recall  f1-score   support
+<pre>0.8703
+              precision    recall  f1-score   support
 
-           0       0.90      0.82      0.85      8467
-           1       0.87      0.93      0.90     11533
+           0       0.89      0.79      0.84      8467
+           1       0.86      0.93      0.89     11533
 
-    accuracy                           0.88     20000
-   macro avg       0.88      0.87      0.88     20000
-weighted avg       0.88      0.88      0.88     20000
+    accuracy                           0.87     20000
+   macro avg       0.87      0.86      0.87     20000
+weighted avg       0.87      0.87      0.87     20000
 
 </pre>
 </div>
@@ -15721,7 +15730,7 @@ weighted avg       0.88      0.88      0.88     20000
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h1 id="Finally-XBOOST-is-our-final-model-with-93.8-%">Finally XBOOST is our final model with 93.8 %<a class="anchor-link" href="#Finally-XBOOST-is-our-final-model-with-93.8-%">&#182;</a></h1>
+<h1 id="Finally-XBOOST-is-our-final-model-with-87-%-accuracy.">Finally XBOOST is our final model with 87 % accuracy.<a class="anchor-link" href="#Finally-XBOOST-is-our-final-model-with-87-%-accuracy.">&#182;</a></h1>
 </div>
 </div>
 </div>
